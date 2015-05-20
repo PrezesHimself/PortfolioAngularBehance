@@ -1,0 +1,189 @@
+
+@import url(http://fonts.googleapis.com/css?family=Quicksand:400,700);
+/* Space out content a bit */
+body {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+html {
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+}
+/* Everything but the jumbotron gets side spacing for mobile first views */
+.header,
+.marketing,
+.footer {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Custom page header */
+.header {
+  /*border-bottom: 1px solid #e5e5e5;*/
+}
+/* Make the masthead heading the same height as the navigation */
+.header h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 40px;
+  padding-bottom: 19px;
+}
+
+/* Custom page footer */
+.footer {
+  padding-top: 19px;
+  color: #777;
+  /*border-top: 1px solid #e5e5e5;*/
+}
+
+/* Customize container */
+@media (min-width: 768px) {
+  .container {
+    max-width: 730px;
+  }
+}
+.container-narrow > hr {
+  margin: 30px 0;
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  /*border-bottom: 1px solid #e5e5e5;*/
+}
+.jumbotron .btn {
+  font-size: 21px;
+  padding: 14px 24px;
+}
+
+/* Supporting marketing content */
+.marketing {
+  margin: 40px 0;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}
+
+/* Responsive: Portrait tablets and up */
+@media screen and (min-width: 768px) {
+  /* Remove the padding we set earlier */
+  .header,
+  .marketing,
+  .footer {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  /* Space out the masthead */
+  .header {
+    margin-bottom: 30px;
+  }
+  /* Remove the bottom border on the jumbotron for visual effect */
+  .jumbotron {
+    border-bottom: 0;
+  }
+}
+.gallery {
+margin-top:  190px;
+}
+* {
+    font-family: 'Quicksand', sans-serif !important;
+}
+ a, a:hover, a:link, a:visited, a:active {
+    text-decoration: none;
+    color: #000000;
+     font-family: 'Quicksand', sans-serif !important;
+}
+
+
+.gallery img{
+    margin-bottom: 20px;
+
+}
+
+.userInfo {
+    margin-bottom: 90px;
+    padding-bottom: 60px;
+    padding-top: 20px;
+    clear: both;
+
+}
+.userInfo h1{
+    font-family: 'Quicksand', sans-serif !important;
+}
+.userInfo p{
+    padding-left: 60px;
+}
+.userInfo img{
+    margin-right: 20px;
+}
+
+.circular {
+    width: 113px;
+    height: 113px;
+    border-radius: 150px;
+    -webkit-border-radius: 150px;
+    -moz-border-radius: 150px;
+    background: no-repeat center center;
+    background-size:  auto 100%;
+    margin-right: 60px;
+}
+
+.project {
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+.project p{
+    padding-top: 40px;
+}
+
+.onTheSide {
+    animation: toSideAnimation 1s;
+    left: 0%;
+    position: fixed;
+    /*opacity: .5;*/
+}
+.onTheSide .circular, .onTheCenter .circular {
+    -webkit-transition: all 2s ease;
+    -moz-transition: all 2s ease;
+    -o-transition: all 2s ease;
+    -ms-transition: all 2s ease;
+    transition: all 2s ease;
+}
+.onTheSide .circular {
+    margin-left: 20px;
+    /*transform: rotateY(180deg);*/
+}
+.onTheSide p, .onTheSide h1  {
+    display: none;
+}
+.onTheCenter {
+
+    left: 20%;
+    animation: toCenterAnimation 1s;
+    /*opacity: 1;*/
+    position: absolute;
+}
+
+
+@keyframes toCenterAnimation {
+    0% {
+        left: 0%;
+    }
+    100% {
+        left: 20%;
+
+    }
+}
+@keyframes toSideAnimation {
+    0% {
+        left: 20%;
+    }
+    100% {
+        left: 0%;
+    }
+}
+
+.text {
+    float: left;
+}

@@ -1,0 +1,14 @@
+<div class="folio">
+
+
+    <h1> {{project.name}} </h1>
+    <p>{{project.description}} </p>
+    <div ng-repeat="image in project.modules" >
+
+        <img ng-src="{{image.src}}"/>
+
+        <iframe ng-show="{{image.type ==='embed'}}" width="560" height="315" src="{{image.embed}}" frameborder="0" allowfullscreen=""></iframe>
+
+    </div>
+
+</div>

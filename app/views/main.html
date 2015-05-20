@@ -1,0 +1,15 @@
+<div class="folio">
+
+
+    <div style="clear: both"/>
+    <div class="gallery">
+    <div ng-repeat="project in projects" class="project">
+      <a ui-sref="index.projects({projectId: {{project.id}}})"> <div circular="{{project.covers.202}}" style="float: left">
+          </div>
+          <!--<img ng-src="{{project.covers.115}}"/>-->
+          <p>{{project.name}}</p></a>
+
+        <div style="clear: both"/>
+    </div>
+</div>
+</div>
